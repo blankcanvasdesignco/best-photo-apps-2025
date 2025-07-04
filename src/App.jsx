@@ -6,8 +6,8 @@ import screen2 from "./assets/screen2.png";
 import screen3 from "./assets/screen3.png";
 import screen4 from "./assets/screen4.png";
 import screen5 from "./assets/screen5.png";
-// import screen6 from "./assets/screen6.png";
-// import screen7 from "./assets/screen7.png";
+import screen6 from "./assets/screen6.png";
+import screen7 from "./assets/screen7.png";
 import panoslice1 from "./assets/panoslice/panoslice1.webp";
 import panoslice2 from "./assets/panoslice/panoslice2.webp";
 import panoslice3 from "./assets/panoslice/panoslice3.webp";
@@ -55,6 +55,12 @@ import panaroid5 from "./assets/panaroid/panaroid5.webp";
 import panaroid6 from "./assets/panaroid/panaroid6.webp";
 import panaroid7 from "./assets/panaroid/panaroid7.webp";
 import panaroid8 from "./assets/panaroid/panaroid8.webp";
+import panoslice_icon from "./assets/icons/panoslice_icon.png";
+import swipekit_icon from "./assets/icons/swipekit_icon.png";
+import lono_icon from "./assets/icons/lono_icon.png";
+import rene_icon from "./assets/icons/rene_icon.png";
+import lek_icon from "./assets/icons/lek_icon.png";
+import mural_icon from "./assets/icons/mural_icon.png";
 
 function App() {
   return (
@@ -98,18 +104,18 @@ function App() {
                 {
                   src: screen5,
                   alt: "Feature 5",
-                  link: "https://apps.apple.com/app/parent-101-parenting-tips/id6737198424",
+                  link: "https://apps.apple.com/app/grow-your-linkedin-lek-ai/id6702005680",
                 },
-                {/* {
+                {
                   src: screen6,
                   alt: "Feature 6",
-                  link: "https://apps.apple.com/app/tawk2-relationship-cards/id6738306118",
+                  link: "https://play.google.com/store/apps/details?id=com.muralgridforinstagram.squarecrop&pcampaignid=web_share",
                 },
                 {
                   src: screen7,
                   alt: "Feature 7",
-                  link: "https://apps.apple.com/app/grow-your-linkedin-lek-ai/id6702005680",
-                }, */}
+                  link: "https://play.google.com/store/apps/details?id=com.panoslice.panoslicepro&pcampaignid=web_share",
+                },
                 // Add more images here as needed
               ].map((img, idx) => (
                 <a
@@ -148,26 +154,49 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #1 */}
-                <span className="text-2xl font-bold underline">#1</span>
-                {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <span className="text-2xl font-bold">#1</span>
+                {/* App Icon as link */}
+                <a
+                  href="https://apps.apple.com/app/panoslice-photo-swipe-collage/id1592547810"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <img
+                    src={panoslice_icon}
+                    alt="Panoslice App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
+                {/* Title as link */}
+                <a
+                  href="https://apps.apple.com/app/panoslice-photo-swipe-collage/id1592547810"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl font-bold"
+                  tabIndex={0}
+                >
                   Panoslice: Photo Swipe Collage
-                </span>
-                <div className="flex items-center mt-1">
+                </a>
+                {/* Ratings and Category as combined link */}
+                <a
+                  href="https://apps.apple.com/app/panoslice-photo-swipe-collage/id1592547810"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mt-1 focus:outline-none"
+                  tabIndex={0}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
                   <span className="text-yellow-500 text-xl ml-1">★</span>
                   <span className="text-lg">4.5</span>
                   <span className="text-lg">(1.9k+)</span>
                   <span className="mx-2 text-lg">|</span>
                   <span className="text-lg">Photo & Video</span>
-                </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -245,26 +274,51 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #2 */}
-                <span className="text-2xl font-bold underline">#2</span>
-                {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <span className="text-2xl font-bold">#2</span>
+                {/* App Icon as link */}
+                <a
+                  href="https://apps.apple.com/in/app/swipekit-photo-collage-maker/id6745084550"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                  aria-label="Open SwipeKit App Store page"
+                >
+                  <img
+                    src={swipekit_icon}
+                    alt="Swipekit App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
+                {/* Title as link */}
+                <a
+                  href="https://apps.apple.com/in/app/swipekit-photo-collage-maker/id6745084550"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl font-bold"
+                  tabIndex={0}
+                  aria-label="Open SwipeKit App Store page"
+                >
                   SwipeKit : Photo Collage Maker
-                </span>
-                <div className="flex items-center mt-1">
+                </a>
+                {/* Ratings and Category as link */}
+                <a
+                  href="https://apps.apple.com/in/app/swipekit-photo-collage-maker/id6745084550"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mt-1 focus:outline-none"
+                  tabIndex={0}
+                  aria-label="Open SwipeKit App Store page"
+                >
                   <span className="text-yellow-500 text-xl ml-1">★</span>
                   <span className="text-lg">5</span>
                   <span className="text-lg">(10+)</span>
                   <span className="mx-2 text-lg">|</span>
                   <span className="text-lg">Photo & Video</span>
-                </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -340,26 +394,48 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #3 */}
-                <span className="text-2xl font-bold underline">#3</span>
+                <span className="text-2xl font-bold">#3</span>
                 {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <a
+                  href="https://apps.apple.com/app/lono-collage-reels-maker/id1632742723"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <img
+                    src={lono_icon}
+                    alt="Lono App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
-                  Lono : collage & reels maker
-                </span>
-                <div className="flex items-center mt-1">
+                <a
+                  href="https://apps.apple.com/app/lono-collage-reels-maker/id1632742723"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <span className="text-2xl font-bold">
+                    Lono : collage & reels maker
+                  </span>
+                </a>
+                <a
+                  href="https://apps.apple.com/app/lono-collage-reels-maker/id1632742723"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mt-1 focus:outline-none"
+                  tabIndex={0}
+                >
                   <span className="text-yellow-500 text-xl ml-1">★</span>
                   <span className="text-lg">4.4</span>
                   <span className="text-lg">(400+)</span>
                   <span className="mx-2 text-lg">|</span>
                   <span className="text-lg">Photo & Video</span>
-                </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -438,26 +514,50 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #4 */}
-                <span className="text-2xl font-bold underline">#4</span>
-                {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <span className="text-2xl font-bold">#4</span>
+                {/* App Icon as link */}
+                <a
+                  href="https://apps.apple.com/app/rene-ai-filters-collage-edit/id6744745951"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <img
+                    src={rene_icon}
+                    alt="Rene App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
-                  Rene: AI Filters, Collage Edit
-                </span>
-                <div className="flex items-center mt-1">
+                {/* Title as link */}
+                <a
+                  href="https://apps.apple.com/app/rene-ai-filters-collage-edit/id6744745951"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <span className="text-2xl font-bold">
+                    Rene: AI Filters, Collage Edit
+                  </span>
+                </a>
+                {/* Ratings and Category as combined link */}
+                <a
+                  href="https://apps.apple.com/app/rene-ai-filters-collage-edit/id6744745951"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mt-1 focus:outline-none"
+                  tabIndex={0}
+                >
                   <span className="text-yellow-500 text-xl ml-1">★</span>
                   <span className="text-lg">5</span>
                   <span className="text-lg">(10+)</span>
                   <span className="mx-2 text-lg">|</span>
                   <span className="text-lg">Photo & Video</span>
-                </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -532,26 +632,52 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #5 */}
-                <span className="text-2xl font-bold underline">#5</span>
+                <span className="text-2xl font-bold">#5</span>
                 {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <a
+                  href="https://apps.apple.com/app/grow-your-linkedin-lek-ai/id6702005680"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <img
+                    src={lek_icon}
+                    alt="Lek App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
-                  Grow your Linkedin : Lek AI
-                </span>
-                <div className="flex items-center mt-1">
-                  <span className="text-yellow-500 text-xl ml-1">★</span>
-                  <span className="text-lg">4.2</span>
-                  <span className="text-lg">(10+)</span>
-                  <span className="mx-2 text-lg">|</span>
-                  <span className="text-lg">Productivity</span>
-                </div>
+                <a
+                  href="https://apps.apple.com/app/grow-your-linkedin-lek-ai/id6702005680"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                  style={{ textDecoration: "none" }}
+                >
+                  <span className="text-2xl font-bold">
+                    Grow your Linkedin : Lek AI
+                  </span>
+                </a>
+                <a
+                  href="https://apps.apple.com/app/grow-your-linkedin-lek-ai/id6702005680"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="flex items-center mt-1">
+                    <span className="text-yellow-500 text-xl ml-1">★</span>
+                    <span className="text-lg">4.2</span>
+                    <span className="text-lg">(10+)</span>
+                    <span className="mx-2 text-lg">|</span>
+                    <span className="text-lg">Productivity</span>
+                  </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -628,26 +754,50 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #6 */}
-                <span className="text-2xl font-bold underline">#6</span>
+                <span className="text-2xl font-bold">#6</span>
                 {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.muralgridforinstagram.squarecrop&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <img
+                    src={mural_icon}
+                    alt="Mural App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
-                  Mural: Grids for Instagram
-                </span>
-                <div className="flex items-center mt-1">
-                  <span className="text-yellow-500 text-xl ml-1">★</span>
-                  <span className="text-lg">4.4</span>
-                  <span className="text-lg">(50+)</span>
-                  <span className="mx-2 text-lg">|</span>
-                  <span className="text-lg">Photo & Video</span>
-                </div>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.muralgridforinstagram.squarecrop&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <span className="text-2xl font-bold">
+                    Mural: Grids for Instagram
+                  </span>
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.muralgridforinstagram.squarecrop&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:outline-none"
+                  tabIndex={0}
+                >
+                  <div className="flex items-center mt-1">
+                    <span className="text-yellow-500 text-xl ml-1">★</span>
+                    <span className="text-lg">4.4</span>
+                    <span className="text-lg">(50+)</span>
+                    <span className="mx-2 text-lg">|</span>
+                    <span className="text-lg">Photo & Video</span>
+                  </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -724,26 +874,44 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-4 w-full">
               <div className="flex flex-row items-center gap-4">
                 {/* #7 */}
-                <span className="text-2xl font-bold underline">#7</span>
+                <span className="text-2xl font-bold">#7</span>
                 {/* App Icon */}
-                <img
-                  src={screen1}
-                  alt="Panoslice App Icon"
-                  className="w-16 h-16 rounded-2xl border border-gray-300"
-                />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.panoslice.panoslicepro&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={panoslice_icon}
+                    alt="Panoslice App Icon"
+                    className="w-16 h-16 rounded-2xl border border-gray-300"
+                  />
+                </a>
               </div>
               {/* Title and Ratings */}
               <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold underline">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.panoslice.panoslicepro&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl font-bold"
+                  style={{ textDecoration: "underline" }}
+                >
                   Panoslice: Insta collage maker
-                </span>
-                <div className="flex items-center mt-1">
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.panoslice.panoslicepro&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mt-1"
+                  style={{ textDecoration: "none" }}
+                >
                   <span className="text-yellow-500 text-xl ml-1">★</span>
                   <span className="text-lg">4.5</span>
                   <span className="text-lg">(1.9k+)</span>
                   <span className="mx-2 text-lg">|</span>
                   <span className="text-lg">Photo & Video</span>
-                </div>
+                </a>
               </div>
             </div>
             {/* Get App Button */}
@@ -817,36 +985,11 @@ function App() {
           <hr className="mt-8 md:my-12 border-gray-300" />
         </div>
       </div>
-
       <footer className="w-full py-8 border-t border-gray-200 bg-black text-center text-gray-200 text-sm">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
           <div>
-            &copy; {new Date().getFullYear()} Trending iPhone Apps. All rights
+            &copy; {new Date().getFullYear()} Best Photo Apps. All rights
             reserved.
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="https://twitter.com/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              Twitter
-            </a>
-            <a
-              href="mailto:hello@trendingiphoneapps.com"
-              className="hover:underline"
-            >
-              Contact
-            </a>
-            <a
-              href="https://www.producthunt.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              Product Hunt
-            </a>
           </div>
         </div>
       </footer>
