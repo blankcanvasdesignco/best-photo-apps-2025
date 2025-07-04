@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import apple_dl from "./assets/apple_dl.png";
+import google_dl from "./assets/google_dl.png";
 import screen1 from "./assets/screen1.png";
 import screen2 from "./assets/screen2.png";
 import screen3 from "./assets/screen3.png";
@@ -860,7 +861,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <img
-                src={apple_dl}
+                src={google_dl}
                 alt="Download on Play Store"
                 className="w-48 h-16 object-cover"
               />
@@ -975,7 +976,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <img
-                src={apple_dl}
+                src={google_dl}
                 alt="Download on App Store"
                 className="w-48 h-16 object-cover"
               />
