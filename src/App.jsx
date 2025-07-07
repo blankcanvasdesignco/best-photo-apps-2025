@@ -72,6 +72,15 @@ function App() {
           BEST PHOTO APPS 2025
         </h1>
 
+        <p className="text-lg md:text-xl text-center text-gray-700 max-w-4xl mx-auto mb-12 md:mb-16 leading-relaxed">
+          Looking for the best photo apps of 2025? This site is a hand-curated
+          collection of iOS and android apps that are fast, aesthetic, and
+          actually useful. From minimalist photo editors like Rene to powerful
+          note-taking tools and productivity gems — this list is for creators,
+          tech lovers, and anyone tired of cluttered app stores. No ads. No
+          fluff. Just clean, beautiful editing apps that work.
+        </p>
+
         {/* Preview Gallery */}
 
         <div className="flex justify-center relative mb-12">
